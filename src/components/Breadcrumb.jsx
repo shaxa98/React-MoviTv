@@ -5,7 +5,7 @@ const BreadcrumbComponent = (props) => {
         <li className="breadcrumb-item" id="breadcrumb-item">
           <a href="#" id="homeBtn">
             {" "}
-            Home /{props.page}
+            Home / {props.page}
           </a>
         </li>
       </ol>
