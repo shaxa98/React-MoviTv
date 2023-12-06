@@ -1,0 +1,285 @@
+<header>
+  <!-- Header  -->
+  <nav class="navbar navbar-expand-lg bg-body-secondary">
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row w-100">
+          <div class="col">
+            <a class="navbar-brand" id="navbar-brand" href="#">
+              <img
+                src="./img/tvm-header-logo-bk.png"
+                alt="Bootstrap"
+                width="140"
+                height="50"
+              />
+            </a>
+          </div>
+
+          <div class="col my-2 d-flex">
+            <input
+              class="form-control me-2"
+              id="search-btn"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="currentColor"
+              class="bi bi-search mt-2"
+              id="search-icon"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+              />
+              f
+            </svg>
+          </div>
+          <div class="col my-1">
+            <div
+              class="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="nav-login active"
+                    aria-current="page"
+                    href="#"
+                    >Login</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="nav-reg active"
+                    aria-current="page"
+                    href="#"
+                    >Register</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav bars -->
+  <div class="container-fluid bg-info">
+    <div class="container">
+      <div class="btn-group py-2">
+        <a href="#" class="btn btn-info text-white" aria-current="page"  id="TabShows">Shows</a>
+        <a href="#" class="btn btn-info text-white"  id="TabPeople">People </a>
+        <a href="#" class="btn btn-info text-white"  id="TAbNetwork">Network </a>
+        <a href="#" class="btn btn-info text-white"  id="TabWebchanels">Web Chanels </a>
+        <a href="#" class="btn btn-info text-white"  id="TabArticles">Articles </a>
+        <a href="#" class="btn btn-info text-white"  id="TabCountdown">Countdown </a>
+        <a href="#" class="btn btn-info text-white"  id="TabForum">Forums </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+  Navbar tabs
+    <div class="container py-3">
+      <nav aria-label="breadcrumb ">
+        <ol class="breadcrumb bg-body-secondary p-3 rounded">
+          <li class="breadcrumb-item" id="breadcrumb-item">
+            <a href="#" id="homeBtn"> Home /</a>
+            
+          </li>
+         </ol>
+      </nav>
+      </div>
+
+      <div class="container">
+        <!-- Registration ekran -->
+        <!-- Registeration -->
+        <div class="w-25 d-none" id="regisration-form">
+          <h3 class="my-3">Create a Movie-TV account</h3>
+
+          <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary btn-lg"
+            id="register-submit"
+          >
+            Submit
+          </button>
+        </div>
+
+        <!-- After regsitration -->
+        <div
+          class="d-flex align-items-center d-none"
+          id="regisration-success-bunner"
+          style="height: 30rem"
+        >
+          <div>
+            <h5 class="text-primary">Success</h5>
+            <p class="card-text">You have successfully registrated!</p>
+            <button
+              class="btn btn-primary btn-lg"
+              id="clickToLoginBtn"
+              type="button"
+            >
+              Click to login
+            </button>
+          </div>
+        </div>
+
+        <!-- Login ekran -->
+        <!-- Login -->
+        <div class="w-25 d-none" id="login-form">
+          <h3 class="my-3">Login</h3>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="login-email"
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="login-password" />
+          </div>
+          <button class="btn btn-primary btn-lg" id="login-submit">
+            Login
+          </button>
+        </div>
+
+        <!--You have successfully baner paydo mekadagi -->
+        <div
+          class="d-flex align-items-center d-none"
+          id="login-success-bunner"
+          style="height: 30rem"
+        >
+          <div>
+            <h5 class="text-primary">Success</h5>
+            <p class="card-text">You have successfully Logined!</p>
+            <button
+              class="btn btn-primary btn-lg"
+              id="clickAfterLoginSuccessBtn"
+              type="button"
+            >
+              Watch TV Shows
+            </button>
+          </div>
+        </div>
+
+        <!--Your pasword is nor correct banewra muburovardagi -->
+        <div
+          class="d-flex align-items-center d-none"
+          id="login-unsuccess-bunner"
+          style="height: 30rem"
+        >
+          <div>
+            <h5 class="text-danger">Wrong</h5>
+            <p class="card-text">Your PASSWORD is not correct!</p>
+          </div>
+        </div>
+
+        <!-- Main ekran -->
+        <!--kinoya kategoriyesh-->
+        <div class="w-100 " id="main">
+          <header>
+            <div id="tabs-topic"> 
+           </div>
+          </header>
+          <div class="d-flex flex-wrap   " id="movies-container">
+            <div class="loder">
+              <span class="loader">
+
+              </span>
+            </div>
+          </div>
+
+          <!-- Kategoriya of people -->
+          <div class="d-flex flex-wrap d-none" id="people-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <!-- Kategoriya of network-->
+          <div class="d-flex flex-wrap d-none" id="network-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+           <!-- Kategoriya of Webchanel-->
+           <div class="d-flex flex-wrap d-none" id="Chanel-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <!-- Kategoriya of Articles-->
+          <div class="d-flex flex-wrap d-none" id="articles-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+           <!-- Kategoriya of Countdown-->
+           <div class="d-flex flex-wrap d-none" id="Countdown-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+          <!-- Kategoriya of Forums-->
+          <div class="d-flex flex-wrap d-none" id="Forum-container">
+            
+            <div class="loder">
+              <span class="loader"></span>
+            </div>
+          </div>
+
+
+          <button type="button" class="btn btn-outline-success my-3 mx-1">
+            More Show >
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kino haqida -->
+    <div class="kino-haqida-container d-none" id="kino-haqida-container">
+      
+        <div class="kino-haqida-container-description-title">FBI</div>
+        <div class="kino-haqida-container-description-genre">
+          <span>Crime</span>
+          <span>Drama</span>
+          <span>Action</span>
+        </div>
+        <div class="kino-haqida-container-description-p">
+        </div>
+      </div>
+    </div>
