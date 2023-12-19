@@ -23,3 +23,60 @@ body {
   margin: 5px;
   width: 19%;
 }
+
+.aboutMovi {
+  height: 90%;
+  padding: 20px 180px;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  background-image: url("https://static.tvmaze.com/uploads/images/original_untouched/81/202627.jpg");
+}
+*/ .aboutMovi-img {
+  width: 30%;
+  height: 100%;
+}
+
+.aboutMovi-img img {
+  border-radius: 10px;
+}
+
+.aboutMovi-img-btn {
+  width: 96%;
+  height: 50px;
+  color: white;
+  background-color: green;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 10px;
+}
+
+.aboutMovi-description {
+  width: 69%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.aboutMovi-description-title {
+  height: 20%;
+  font-size: 50px;
+  font-weight: bold;
+  padding: 40px 0px 0px 30px;
+}
+
+.aboutMovi-description-genre {
+  color: red;
+  padding-left: 30px;
+}
+
+.aboutMovi-description-p {
+  padding: 10px 30px 0px 30px;
+  text-align: justify;
+}

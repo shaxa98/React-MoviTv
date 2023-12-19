@@ -7,6 +7,7 @@ import NetworkPage from "./pages/NetworkPage";
 import WebChannelsPage from "./pages/WebChannelsPage";
 import ForumsPage from "./pages/ForumsPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import AboutMove from "./pages/AboutMove";
 
 const router = createBrowserRouter([
   {
@@ -47,6 +48,7 @@ const AppContainer = () => {
         minHeight: "100vh",
       }}
     >
+      <AboutMove />
       <HeaderComponent />
       <RouterProvider router={router} />
     </div>
