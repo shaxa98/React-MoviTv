@@ -26,7 +26,11 @@ const ShowPage = () => {
   return (
     <div className="container ">
       <BreadcrumbComponent page="Show" />
-      {loading ? <LoaderComponent /> : <CardContainer data={showsState} />}
+      {loading ? (
+        <LoaderComponent />
+      ) : (
+        <CardContainer data={showsState} type="shows" />
+      )}
       {/* {loading ?  <LoaderComponent /> : null} */}
       {/* {loading == true?  <LoaderComponent /> : null} */}
     </div>

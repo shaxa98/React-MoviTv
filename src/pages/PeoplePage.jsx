@@ -22,7 +22,7 @@ const PeoplePage = () => {
   return (
     <div className="container ">
       <BreadcrumbComponent page="People" />
-      <CardContainer data={PeopleState} />
+      <CardContainer data={PeopleState} type="people" />
     </div>
   );
 };

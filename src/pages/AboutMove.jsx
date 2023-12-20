@@ -1,32 +1,41 @@
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+
 const AboutMove = () => {
+  const params = useParams();
+  const [show, updateShow] = useState({});
+
+  useEffect(() => {
+    const { showId } = params;
+    fetch(`https://api.tvmaze.com/shows/${showId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        updateShow(data);
+      });
+  }, []);
+
   return (
-    <div className="aboutMovi" id="aboutMovi">
-      {" "}
+    <div
+      className="aboutMovi"
+      style={{
+        backgroundImage: `url(${show.image?.original})`,
+      }}
+    >
       <div className="aboutMovi-img">
-        <img
-          width="100%"
-          src="https://static.tvmaze.com/uploads/images/medium_portrait/81/202627.jpg"
-          alt=""
-        />
+        <img width="100%" src={show.image?.medium} alt="" />
         <button className="aboutMovi-img-btn">Watch</button>
       </div>
       <div className="aboutMovi-description">
-        <div className="aboutMovi-description-title">Under the Dome</div>
+        <div className="aboutMovi-description-title">{show.name}</div>
         <div className="aboutMovi-description-genre">
-          <span>Drama</span>
-          <span>Science-Fiction</span>
-          <span>Thriller</span>
+          {show?.genres?.map((genre) => (
+            <span key={genre}>{genre}</span>
+          ))}
         </div>
-        <div className="aboutMovi-description-p">
-          <p>
-            <b>Under the Dome</b> is the story of a small town that is suddenly
-            and inexplicably sealed off from the rest of the world by an
-            enormous transparent dome. The town's inhabitants must deal with
-            surviving the post-apocalyptic conditions while searching for
-            answers about the dome, where it came from and if and when it will
-            go away.
-          </p>
-        </div>
+        <div
+          className="aboutMovi-description-p"
+          dangerouslySetInnerHTML={{ __html: show.summary }}
+        ></div>
       </div>
     </div>
   );

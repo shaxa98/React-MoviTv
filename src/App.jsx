@@ -15,8 +15,17 @@ const router = createBrowserRouter([
     element: <ShowPage />,
   },
   {
+    path: "/shows/:showId",
+    element: <AboutMove />,
+  },
+
+  {
     path: "/people",
     element: <PeoplePage />,
+  },
+  {
+    path: "/people/:peopleId",
+    element: <AboutMove />,
   },
   {
     path: "/network",
@@ -48,8 +57,8 @@ const AppContainer = () => {
         minHeight: "100vh",
       }}
     >
-      <AboutMove />
       <HeaderComponent />
+      {/* <AboutMove /> */}
       <RouterProvider router={router} />
     </div>
   );

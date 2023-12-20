@@ -6,9 +6,9 @@ const HeaderComponent = () => {
           <div className="container">
             <div className="row w-100">
               <div className="col">
-                <a className="navbar-brand" id="navbar-brand" href="#">
+                <a className="navbar-brand" id="navbar-brand" href="/">
                   <img
-                    src="./img/tvm-header-logo-bk.png"
+                    src="/img/tvm-header-logo-bk.png"
                     alt="Bootstrap"
                     width="140"
                     height="50"
