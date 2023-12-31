@@ -9,11 +9,26 @@ import ForumsPage from "./pages/ForumsPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutMove from "./pages/AboutMove";
 import AboutPeople from "./pages/AboutPeople";
+import Login from "./pages/Login";
+import RegisterPage from "./pages/Register";
+import LoginApp from "./pages/loginApp";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <ShowPage />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/loginapp",
+    element: <LoginApp />,
+  },
+  {
+    path: "/register",
+    element: <RegisterPage />,
   },
   {
     path: "/shows/:showId",
