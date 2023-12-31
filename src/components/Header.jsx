@@ -49,7 +49,7 @@ const HeaderComponent = () => {
                         className="nav-link active"
                         id="nav-login active"
                         aria-current="page"
-                        href="#"
+                        href="login"
                       >
                         Login
                       </a>
@@ -59,7 +59,7 @@ const HeaderComponent = () => {
                         className="nav-link active"
                         id="nav-reg active"
                         aria-current="page"
-                        href="#"
+                        href="register"
                       >
                         Register
                       </a>
