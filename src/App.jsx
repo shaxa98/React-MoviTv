@@ -8,6 +8,7 @@ import WebChannelsPage from "./pages/WebChannelsPage";
 import ForumsPage from "./pages/ForumsPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AboutMove from "./pages/AboutMove";
+import AboutPeople from "./pages/AboutPeople";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/people/:peopleId",
-    element: <AboutMove />,
+    element: <AboutPeople />,
   },
   {
     path: "/network",
