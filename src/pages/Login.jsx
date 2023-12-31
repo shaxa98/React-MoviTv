@@ -54,12 +54,6 @@ const LoginPage = () => {
       (obj) => obj.username == username && obj.password == password
     );
 
-    if (userFound) {
-      setLoggedIn(true);
-    } else {
-      alert("Login failed!");
-    }
-
     // if (username == "shaxzod" && password == "12345678") {
     //   setLoggedIn(true);
     // } else {
