@@ -6,12 +6,16 @@ const RegisterPage = () => {
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [registered, setRegistered] = useState(false);
-  let users = [];
+  const [users, setUsers] = useState([]);
+
   const register = () => {
     const user = { name: username, password: password, email: email };
-    users.push(user);
+    setUsers([...users, user]);
+    if (username == "" || password == "" || email == "") {
+      alert("Fill all the field");
+      return;
+    }
     setRegistered(true);
-    console.log(users);
   };
 
   return (
