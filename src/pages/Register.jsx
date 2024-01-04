@@ -1,16 +1,17 @@
 import { useState } from "react";
 import BreadcrumbComponent from "../components/Breadcrumb";
 
-const RegisterPage = () => {
+const RegisterPage = ({ users, setUsers }) => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
   const [registered, setRegistered] = useState(false);
-  const [users, setUsers] = useState([]);
+  // const [users, setUsers] = useState([]);
 
   const register = () => {
     const user = { name: username, password: password, email: email };
     setUsers([...users, user]);
+    // users.push(user);
     if (username == "" || password == "" || email == "") {
       alert("Fill all the field");
       return;

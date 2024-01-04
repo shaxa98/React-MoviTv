@@ -1,22 +1,22 @@
 import { useState } from "react";
 import BreadcrumbComponent from "../components/Breadcrumb";
 
-const LoginPage = () => {
+const LoginPage = ({ users }) => {
   const [username, updateUsername] = useState("");
   const [password, setPassword] = useState("");
   const [loggedIn, setLoggedIn] = useState(false);
-  const [users, setUsers] = useState([
-    {
-      username: "shaxzod",
-      password: "12345678",
-      age: 24,
-    },
-    {
-      username: "bekhzod",
-      password: "11111111",
-      age: 26,
-    },
-  ]);
+  // const [users, setUsers] = useState([
+  //   {
+  //     username: "shaxzod",
+  //     password: "12345678",
+  //     age: 24,
+  //   },
+  //   {
+  //     username: "bekhzod",
+  //     password: "11111111",
+  //     age: 26,
+  //   },
+  // ]);
 
   const login = () => {
     // let userFound = false;
@@ -54,12 +54,12 @@ const LoginPage = () => {
       (obj) => obj.username == username && obj.password == password
     );
 
-    // if (username == "shaxzod" && password == "12345678") {
-    //   setLoggedIn(true);
-    // } else {
-    //   alert("Login Failed");
-    //   console.log("Login failed");
-    // }
+    if (userFound) {
+      setLoggedIn(true);
+    } else {
+      alert("Login Failed");
+      console.log("Login failed ", users);
+    }
   };
 
   return (
